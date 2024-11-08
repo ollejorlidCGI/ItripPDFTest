@@ -1,6 +1,18 @@
-﻿@{
+﻿@model ItripPDFTest.Models.IndexVM
+
+@{
     ViewData["Title"] = "Home Page";
 }
-<object data="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf" type="application/pdf" frameborder="0" width="100%" height="600px" style="padding: 20px;">
-    <embed src="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf" width="100%" height="600px" />
+
+<embed src="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf#page=2" type="application/pdf" width="100%" height="100%" />
+
+<object data="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf#page=2"
+		type="application/pdf"
+		width="100%"
+		height="100%">
 </object>
+<p>
+	Your browser does not support PDFs.
+	<a href="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf">Download the PDF</a>
+	.
+</p>
