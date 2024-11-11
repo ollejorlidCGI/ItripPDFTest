@@ -2,16 +2,14 @@
 
 @{
     ViewData["Title"] = "Home Page";
+    string fileName = @"https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf";
 }
 
-<embed src="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf" type="application/pdf" style="width:100%; height:1120px" />
+@* 
+<embed src="@fileName" type="application/pdf" style="width:100%; height:1120px" />
+ *@
+<a href="@fileName">Download the PDF</a>.
 
-<p>
-    Your browser does not support PDFs.
-    <a href="https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf">Download the PDF</a>.
-</p>
-
-<object data='https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf'>
-    <p>Oops! Your browser doesn't support PDFs!</p>
-    <p><a href="some.pdf">Download Instead</a></p>
-</object>
+<script>
+    window.open('https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf');
+</script>
